@@ -6,15 +6,12 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
 def github_link_kb():
     button0 = InlineKeyboardButton(
-            text="ɢʀᴏᴜᴘ", 
+            text="Arena 4Me", 
             url=config.GROUP)
     button1 = InlineKeyboardButton(
-            text="ᴄʜᴀɴɴᴇʟ", 
+            text="CHANNEL", 
             url=config.CHANNEL)
-    button2 = InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", 
-            url=config.KODE)
-    buttons_list = [[button0], [button1], [button2]]
+    buttons_list = [[button0], [button1]]
     keyboard = InlineKeyboardMarkup(buttons_list)
     return keyboard
 
